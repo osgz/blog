@@ -2,7 +2,7 @@
 layout: 'layouts/base.njk'
 tags: blog
 title: 从鸿蒙换成IOS 体验iphone 12
-data: '2021-11-18'
+data: 2021-11-18
 ---
 
 # {{ title }}
