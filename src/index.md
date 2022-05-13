@@ -12,7 +12,7 @@ pagination:
 <div class="recent-posts section">
   <h2 class="section-header">随笔<i class="ri-quill-pen-line"></i></h2>
     <div class="posts">
-    {%- for blog in blog_set | getImageFromContent -%}
+    {%- for blog in blog_set | reverse -%}
     <div class="post">
     <div class="time">{{ blog.data.data }}</div>
     <a href="{{ blog.url }}">{{ blog.data.title }}</a></div>
