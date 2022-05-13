@@ -4,7 +4,7 @@ layout: 'layouts/base.njk'
 title: 首页
 pagination:
     data: collections.all
-    size: 20
+    size: 19
     alias: blog_set
     reverse: true
 ---  
