@@ -2,7 +2,7 @@
 layout: 'layouts/base.njk'
 tags: blog
 title: 我换上联想小新pro13 2020了
-data: 2021-10-1
+data: 2021-10-02
 ---
 
 # {{ title }}
