@@ -2,7 +2,7 @@
 layout: 'layouts/base.njk'
 tags: blog
 title: 把博客安家在Cloudflare Pages
-data: 2021-08-01
+data: "2021-08-01"
 ---
 
 # {{ title }}
