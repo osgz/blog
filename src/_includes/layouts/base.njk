@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="same-origin">
+    <title>{{ title }} - {{ site.name }} - {{ site.description }}</title>
+    <meta name="description" content="{{ site.description }}" />
+    <meta name="keywords" content="{{ site.keywords }}" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+</head>
+<!--style="background-image: url(&quot;/assets/img/2022xinchun.jpg&quot;); background-attachment: fixed; zoom: 1;" class="blog" 这段是网站背景代码-->
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="header">
+                <img src="https://q1.qlogo.cn/g?b=qq&amp;nk=81462475&amp;s=100" width="80" height="80" title="{{ site.name }}"></a>
+                <div class="site-description">
+                    <h2>{{ site.gonggao }}</h2>
+                    <nav class="nav social">
+                        <ul class="flat">
+                            <a href="https://space.bilibili.com/89096379/" title="Bilibili" target="_blank"><i class="ri-bilibili-line"></i></a>
+                            <a href="mailto:x@tokcloud.com" title="E-mail" target="_blank"><i class="ri-mail-line"></i></a>
+                        </ul>
+                    </nav>
+                </div>
+                <nav class="nav">
+                    <ul class="flat">
+                        {%- for item in navigation -%}
+                        <li class="active">
+                            <a href="{{ item.url }}">{{ item.name }}</a>
+                        </li>
+                        {%- endfor -%}
+                    </ul>
+                </nav>
+            </div>
+            <article>              
+            {{ content | safe }} 
+            </article>
+            <a id="to_top" href="#" class="to_top" style="display: block;"><i class="ri-arrow-up-line"></i></a> 
+            <div class="footer">
+                 <nav class="nav">
+                 © 2016 - {{ site.year }} | Built using <a href="https://www.11ty.dev/" target="_blank">Eleventy</a></br>
+                     <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022041411号-1</a></br>
+                    <svg class="icon" aria-hidden="true">
+                     <use xlink:href="#icon-cn"></use>
+                    </svg>
+                 </nav>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/iconfont.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.umd.min.js"></script>
+    <script defer src="https://cusdis.com/js/widget/lang/zh-cn.js"></script>
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

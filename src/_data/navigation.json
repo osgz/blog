@@ -1,0 +1,21 @@
+[{
+        "name": "首页",
+        "url": "/"
+    },
+    {
+        "name": "留言",
+        "url": "/guestbook"
+    },
+    {
+        "name": "捐赠",
+        "url": "/donation"
+    },
+    {
+        "name": "友链",
+        "url": "/links"
+    },
+    {
+        "name": "关于",
+        "url": "/about"
+    }
+]
