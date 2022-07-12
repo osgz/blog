@@ -7,9 +7,9 @@ title: '友链'
 # {{ title }}
 
 <div id="szh">
-名称：西街口和鲤鱼</br>
+名称：偶数感知</br>
 简介：道德当身，故不以物惑</br>
-链接：https://blog.osgz.com/</br>
+链接：https://www.osgz.com/</br>
 图标：https://q1.qlogo.cn/g?b=qq&nk=81462475&s=100
 </div>
 
